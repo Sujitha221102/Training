@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<body background="C:\Users\ZCSU034\Documents\background.jpg">
+    <h1>FORM</h1>
+    <form>
+        <label for="fname">Firstname:</label>
+        <input type="text" id="fname" name="fname" pattern="[A-Za-z]+" placeholder="enter your name" required>
+        <br /><br />
+        <label for="lname">Lastname:</label>
+        <input type="text" id="lname" name="lname" pattern="[A-Za-z]+" placeholder="enter your name">
+        <br /><br />
+        <label for="phonenum">Phone number:</label>
+        <input type="number" id="phonenum" name="phonenum" required>
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br /><br />
+        <p>Gender:</p>
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Transgender</label>
+        <br /><br />
+        <label for="address">Address:</label>
+        <textarea type="text" id="address" name="address" maxlength="60" placeholder="Type your address here">
+</textarea>
+        <br /><br />
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required max="45" min="18"
+            title="age must be greater than 17"><br /><br />
+        <p>Expert skills:</p>
+        <input type="checkbox" id="expert" name="expert">
+        <input type="range" id="points" name="points" min="0" max="10">
+        <label for="expert">Html</label><br />
+        <input type="checkbox" id="expert" name="expert">
+        <input type="range" id="points" name="points" min="0" max="10">
+        <label for="expert">Css</label><br />
+        <input type="checkbox" id="expert" name="expert">
+        <input type="range" id="points" name="points" min="0" max="10">
+        <label for="expert">Javascript</label>
+        <br /><br />
+        <label for="blood group">Choose your Blood Group:</label>
+        <select name="blood group" id="Blood group">
+            <option value></option>
+            <option value="O+ve">O+ve</option>
+            <option value="A+ve">A+ve</option>
+            <option value="B+ve">B+ve</option>
+            <option value="A-ve">A-ve</option>
+            <option value="B-ve">B-ve</option>
+            <option value="AB+ve">AB+ve</option>
+        </select>
+        <br/><br/>
+        <label for="color">color:</label>
+        <input type="color"><br/></br/>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" min="2023-01-01" max="2023-12-31">
+        <br /><br />
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" min="09:00" max="18:00">
+        <br /><br />
+        <input type="Submit">
+    </form>
+</body>
+
+</html>
