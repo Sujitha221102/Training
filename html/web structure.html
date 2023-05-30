@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Structure</title>
+        <style>
+        table,th,td{border:1px solid;background-color: rgb(104, 235, 122);color:rgb(18, 6, 6);}
+
+        </style>
+    </head>
+    <body background="college.jpg">
+        <header>
+            <center><img src="logo.jpg" width="100">
+            <h1>COLLEGE WEBSITE</h1>
+            <h1>SAS COLLEGE OF ENGINEERING,CHENNAI</h1>
+            <nav>
+                <table style="background-color:pink;color:crimson;text-align:center" width="600"; height="50" >
+                    <tr>
+                        <td><a href="#">Home</a></td>
+                        <td><a href="#">About Us</a></td>
+                        <td><a href="#">Courses Offered</a></td>
+                        <td><a href="#">Faculty Details</a></td>
+                        <td><a href="#">Contact Us</a></td></tr>
+                </table>
+            </nav></center>
+        </header>
+        <main>
+            <section>
+                <h2>About Us</h2>
+                <p><b>Impart an inclusive engineering education that beyond being a facilitator for a career and rudimentary skills, equips the students to offer ethically & environmentally conscious solutions to societal issues.An institution of higher education that grants degrees, as a bachelor's degree after a four-year course or an associate degree after a two-year course. it is sometimes the undergraduate division of a university.</b></p>
+            </section>
+            <br/>
+            <section>
+                <h2>Courses Offered</h2>
+                <ul>
+                    <li>CSE</li>
+                    <li>ECE</li>
+                    <li>EEE</li>
+                    <li>IT</li>
+                    <li>Civil</li>
+                    <li>Mech</li>
+                </ul>
+            </section>
+        <br/>
+        <br/>
+            <section>
+                <img src="faculty.jpg" width="300" height="350">
+                <h2>Faculty Details</h2>
+                <ul>
+                    <li>Mr.Raj B.E.,MBA.,Ph.D.,</li>
+                    <ul>
+                        <li>CSE Professor</li>
+                        <li>Working since 2020</li></ul>
+                    <li>Mr.Sam B.Tech.,M.Tech.,Ph.D.,</li>
+                    <ul>
+                        <li>CSE Professor</li>
+                        <li>Head Of The Department</li>
+                        <li>Working since 2017</li></ul>
+                    <li>Ms.Geetha B.E.,MBA.,Ph.D.,</li>
+                    <ul>
+                        <li>EEE Professor</li>
+                        <li>Working since 2019</li></ul>
+                    <li>Mrs.Swetha B.E.,MBA.,</li>
+                    <ul>
+                        <li>ECE Professor</li>
+                        <li>Working since 2022</li></ul>
+                </ul>
+            </section>
+            <br/>
+            <section>
+                <h2>Contact Us</h2><img src="contact.jpg" width="130" height="40">
+                <br/>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" pattern="[A-Za-z]+" placeholder="enter your name" required>
+                    <br/><br/>
+                    <label for="number">Phone number:</label>
+                    <input type="number" id="number" name="number" required>
+                    <br/><br/>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br/><br/>
+                    <p>Gender:</p>
+                        <input type="radio" id="gender" name="gender">
+                        <label for="gender">Male</label>
+                        <input type="radio" id="gender" name="gender">
+                        <label for="gender">Female</label>
+                        <input type="radio" id="gender" name="gender">
+                        <label for="gender">Transgender</label>
+                    <br /><br />
+                </form>
+            </section>
+            <section>
+                <h2>Educational Qualifications</h2>
+                <table style="width:25%">
+                    <tr>
+                        <th>Studies</th>
+                        <th>Percentage</th>
+                        <th>Passed out</th>
+                    </tr>
+                    <tr>
+                        <td>SSLC</td>
+                        <td>must be greater than 75%</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>must be greater than 70%</td>
+                        <td>2019</td>
+                    </tr>
+                </table>
+            </section>
+            <section><h2>Reviews</h2><img src="star.jpg" width="130" height="40">
+                <br/>
+                <br/>
+                <input type="range" id="points" name="points" min="0" max="10">
+                <label for="expert">Staffs review</label><br/>
+                <input type="range" id="points" name="points" min="0" max="10">
+                <label for="expert">Students review</label><br/>
+                <input type="range" id="points" name="points" min="0" max="10"> 
+                <label for="expert">Public review</label>
+                <br/><br/>
+            </section>
+            <section>
+                <h2>AUDIO</h2>
+            <audio muted loop controls>
+                <source src="audio.mp3">
+                The audio can not be supported
+            </audio>
+        </section>
+            <br/><br/>
+        <section>
+            <h2>VIDEO</h2>
+            <video  width="650" height="350" style="border:1px solid black;" controls autoplay & muted loop>
+                <source src="video.mp4">
+                The video can not be supported
+            </video>
+        </section>
+            <br/><br/>
+        <section>
+            <h2>IFRAME</h2>
+            <iframe width="650" height="450" src="https://www.codecademy.com/catalog/language/html-css" style="border:1px solid black;" frameborder="0" allowfullscreen></iframe>
+            <br/>
+            <br/>
+            <iframe width="650" height="450" src="https://www.youtube.com/embed/CQZxeoQeo5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <br/><br/>
+        </main>
+        <footer>
+            <p><b>&copy; All Rights Reserved</b></p>
+        </footer>
+        <input type="submit">
+    </body>
+</html>
