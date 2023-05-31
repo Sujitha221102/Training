@@ -1,0 +1,68 @@
+body {
+    background-color: #f0c2d5;
+    margin:50px;
+    padding: 0px;
+    font-family:'Times New Roman', Times, serif;
+}
+.content{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
+    
+}
+.bag{
+    border:2px solid black;
+    margin-bottom: 5px;
+    padding:20px;
+    max-width: fit-content;
+}
+header{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-style: italic;
+}
+img{
+    border:1px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+h3{
+    margin-bottom: -7px;
+}
+.brief{
+    font-size: 15px;
+    font-weight:bold;
+}
+.notes{
+    opacity:60%;
+}
+.bag:nth-last-child(5){
+    background-color:rgb(244, 109, 109);
+    color:rgb(125, 10, 10);
+    border-color:rgb(125, 10, 10);
+}
+.bag:nth-last-child(4){
+    background-color:rgb(112, 232, 140);
+    grid-column:2/4;
+    color:rgb(10, 90, 10);
+    border-color:rgb(10, 90, 10);
+}
+.bag:nth-last-child(3){
+    background-color:rgb(212, 112, 232);
+    grid-row-start: span 2;
+    color:rgb(94, 14, 94);
+    border-color:rgb(94, 14, 94);
+}
+.bag:nth-last-child(2){
+    background-color:rgb(218, 232, 112);
+    grid-column:1/3;
+    color:rgb(87, 87, 4);
+    border-color:rgb(87, 87, 4);
+}
+.bag:nth-last-child(1){
+    background-color:rgb(112, 196, 232);
+    color:rgb(17, 17, 174);
+    border-color:rgb(17, 17, 174);
+}
+
