@@ -65,4 +65,13 @@ h3{
     color:rgb(17, 17, 174);
     border-color:rgb(17, 17, 174);
 }
+@media screen and (max-width:780px) {
+    body{
+        background-color: rgb(106, 174, 38);
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+} 
 
