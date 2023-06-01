@@ -1,0 +1,113 @@
+body {
+    background-color: #fefcfc;
+    margin:50px;
+    padding: 0px;
+    font-family:'Times New Roman', Times, serif;
+}
+.seller{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    border:2px hidden black;
+    margin-bottom: 5px;
+    padding:20px;
+    max-width: fit-content; 
+}
+h1{
+    color:rgb(113, 5, 89);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.seller__abtseller{
+    font-size:17px;
+}
+.seller__rating{
+    margin:10px;
+    font-style: italic;
+}
+.seller__rating--rate1,.seller__rating--rate2,.seller__rating--rate3{
+    display:flex;
+    border:2px solid rgb(242, 246, 243);
+    width:350px;
+    padding:10px;
+    background-color: rgba(205, 214, 205, 0.826);
+}
+.seller__rating--rate2{
+    left:50px;
+    position:relative;
+    top:2px;
+}
+.seller__rating--rate3{
+    left:100px;
+    position:relative;
+    margin:2px;
+    top:2px;
+}
+header{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-style: italic;
+    color:rgb(214, 24, 173)
+}
+img{
+    border:1px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+h3{
+    margin-top: 7px;
+    color:white;
+}
+.opinion{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap:10px;
+    margin-bottom: 5px;
+    padding:20px;
+    max-width: fit-content;
+}
+.opinion__reviewer1,.opinion__reviewer2,.opinion__reviewer3{
+    border:2px solid rgb(88, 2, 75);
+    background-color: rgb(123, 6, 94);
+    padding: 20px;
+    border-radius: 3%;
+}
+.opinion__reviewer1{
+    position:relative;
+    bottom:10px;
+    left:5px;
+}
+.opinion__reviewer2{
+    position:relative;
+    top:10px;
+    bottom:250px;
+    left:5px;
+}
+.opinion__reviewer3{
+    grid-row: 3 / span 5;
+    left:724px;
+    position:relative;
+    bottom:520px;
+    height:300px;
+    width:300px;
+    margin-right:10px;
+}
+.notes{
+    text-align: center;
+    color:white;
+}
+@media screen and (max-width:780px) {
+    body{
+        background-color: rgb(110, 94, 181);
+    }
+    .seller{
+        display: flex;
+        flex-direction: column;
+    }
+    .opinion{
+        display: flex;
+        flex-direction: column;
+    }
+
+} 
+
