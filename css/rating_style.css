@@ -2,7 +2,7 @@ body {
     background-color: #fefcfc;
     margin:50px;
     padding: 0px;
-    font-family:'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .seller{
     display:grid;
@@ -14,21 +14,31 @@ body {
 }
 h1{
     color:rgb(113, 5, 89);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .seller__abtseller{
-    font-size:17px;
+    margin-left:120px;
+    font-size: 130%;
+}
+.seller__abtseller--des{
+    width:550px;
+    opacity: 50%;
 }
 .seller__rating{
-    margin:10px;
-    font-style: italic;
+    margin-top:50px;
+    color:rgb(69, 3, 69);
+    font-weight: bold;
 }
 .seller__rating--rate1,.seller__rating--rate2,.seller__rating--rate3{
     display:flex;
     border:2px solid rgb(242, 246, 243);
-    width:350px;
-    padding:10px;
-    background-color: rgba(205, 214, 205, 0.826);
+    width:330px;
+    margin-left:80px;
+    padding:5px;
+    height:30px;
+    border-radius: 5%;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgba(243, 232, 243, 0.826);
 }
 .seller__rating--rate2{
     left:50px;
@@ -36,17 +46,20 @@ h1{
     top:2px;
 }
 .seller__rating--rate3{
-    left:100px;
+    left:180px;
     position:relative;
     margin:2px;
     top:2px;
+}
+.starring1,.starring2,.starring3{
+    border:1 px solid white;
 }
 header{
     display:flex;
     justify-content:flex-start;
     align-items: center;
     font-style: italic;
-    color:rgb(214, 24, 173)
+    color:rgb(173, 18, 139)
 }
 img{
     border:1px;
@@ -60,7 +73,6 @@ h3{
 .opinion{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(5,1fr);
     grid-gap:10px;
     margin-bottom: 5px;
     padding:20px;
@@ -68,28 +80,30 @@ h3{
 }
 .opinion__reviewer1,.opinion__reviewer2,.opinion__reviewer3{
     border:2px solid rgb(88, 2, 75);
-    background-color: rgb(123, 6, 94);
+    background-color: rgb(77, 3, 58);
     padding: 20px;
     border-radius: 3%;
+    margin:40px;
 }
 .opinion__reviewer1{
     position:relative;
-    bottom:10px;
-    left:5px;
+    top:60px;
+    left:130px;
+    width:270px;
 }
 .opinion__reviewer2{
     position:relative;
-    top:10px;
-    bottom:250px;
-    left:5px;
+    top:100px;
+    left:80px;
+    width:270px;
 }
 .opinion__reviewer3{
     grid-row: 3 / span 5;
-    left:724px;
+    left:835px;
     position:relative;
-    bottom:520px;
-    height:300px;
-    width:300px;
+    bottom:190px;
+    height:180px;
+    width:270px;
     margin-right:10px;
 }
 .notes{
@@ -110,4 +124,3 @@ h3{
     }
 
 } 
-
