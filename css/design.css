@@ -1,0 +1,109 @@
+.cap{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    /*grid-template-columns: repeat(12,1fr);*/
+    background-color:gray;   
+}
+ul>li{
+    list-style: none;
+}
+.apple{
+    text-align: center;
+}
+.apple__abtapple,
+.apple__phonepro,
+.apple__watch_ipad--watch,
+.apple__macitems--macbook
+{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.apple__phonepro h1{
+    font-size: 40px;
+}
+.apple__phone{
+    font-size:20px ;
+}
+.apple__phone h1{
+    font-size:40px;
+}
+.apple__watch_ipad,.apple__macitems,.apple__ipadpod{
+    display:flex; 
+}
+.apple__watch_ipad--watch,.apple__macitems--macbook{
+    width:600px;
+    height:500px;
+    background-color: black;
+}
+.apple__watch_ipad--ipad h1,.apple__macitems--macbook h1,.apple__ipadpod h1 {
+    font-size: 40px;
+}
+.apple__macitems--macwatch{
+    background-color: whitesmoke;
+}
+.apple__watch_ipad--ipad{
+    font-size: 20px;
+    width:600px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: rgb(255, 252, 252);
+}
+.apple__macitems--macbook{
+    margin-top:20px;
+    width:610px;
+    margin-left: 0px;
+}
+.apple__macitems--macwatch img{
+    padding-top: 20px;
+}
+.apple__macitems--macwatch{
+    font-size: 20px;
+    left: 150px;
+    margin-left:20px;
+    margin-top:20px;
+    width:610px;
+}
+.apple__ipadpod{
+    display:flex;
+    font-size: 20px;
+}
+.apple__ipadpod--ipad{
+    color:white;
+    background-color: black;
+    margin-top: 20px;
+    width:590px;
+
+}
+.apple__ipadpod--pod{
+    margin-left:20px;
+    background-color: black;
+    margin-top: 20px;
+    color:white;
+    width:580px;
+}
+.desc a{
+    color:black;
+}
+.about_us{
+    display:flex;
+    color:black;
+    justify-content:space-evenly;
+}
+.title{
+    font-weight: bold;
+}
+li a{
+    color:black;
+}
+.desc{
+    border-bottom: 1px solid black;
+    border-width: 70%;
+}
+.copyrights{
+    border-top: 1px solid black;
+}
+.word{
+    margin-right:1px;
+}
