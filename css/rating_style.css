@@ -1,15 +1,15 @@
 body {
     background-color: #fefcfc;
-    margin:50px;
     padding: 0px;
+    margin-top: 0px ;
+    margin-bottom:0px;
+    margin:0px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .seller{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     border:2px hidden black;
-    margin-bottom: 5px;
-    padding:20px;
     max-width: fit-content; 
 }
 h1{
@@ -17,7 +17,8 @@ h1{
 }
 .seller__abtseller{
     margin-left:120px;
-    font-size: 130%;
+    font-size: 100%;
+    margin-top:20px;
 }
 .seller__abtseller--des{
     width:550px;
@@ -25,20 +26,23 @@ h1{
 }
 .seller__rating{
     margin-top:50px;
-    color:rgb(69, 3, 69);
+    color:rgb(93, 2, 93);
     font-weight: bold;
+}
+.seller__rating img{
+    border:1 px solid white;
 }
 .seller__rating--rate1,.seller__rating--rate2,.seller__rating--rate3{
     display:flex;
     border:2px solid rgb(242, 246, 243);
-    width:330px;
-    margin-left:80px;
+    width:310px;
+    margin-right:10px;
     padding:5px;
     height:30px;
     border-radius: 5%;
-    text-align: center;
-    margin-bottom: 10px;
-    background-color: rgba(243, 232, 243, 0.826);
+    align-items: center;
+    margin-bottom: 0px;
+    background-color:rgb(243, 242, 242);
 }
 .seller__rating--rate2{
     left:50px;
@@ -46,13 +50,10 @@ h1{
     top:2px;
 }
 .seller__rating--rate3{
-    left:180px;
+    left:100px;
     position:relative;
     margin:2px;
     top:2px;
-}
-.starring1,.starring2,.starring3{
-    border:1 px solid white;
 }
 header{
     display:flex;
@@ -61,7 +62,7 @@ header{
     font-style: italic;
     color:rgb(173, 18, 139)
 }
-img{
+.opinion img{
     border:1px;
     margin-right: 10px;
     border-radius: 50%;
@@ -73,9 +74,11 @@ h3{
 .opinion{
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-gap:10px;
-    margin-bottom: 5px;
-    padding:20px;
+    margin-bottom: 1px;
+    padding:10px;
+    height:350px;
     max-width: fit-content;
 }
 .opinion__reviewer1,.opinion__reviewer2,.opinion__reviewer3{
@@ -87,40 +90,71 @@ h3{
 }
 .opinion__reviewer1{
     position:relative;
-    top:60px;
-    left:130px;
-    width:270px;
+    bottom:10px;
+    left:70px;
+    width:260px;
 }
 .opinion__reviewer2{
     position:relative;
-    top:100px;
-    left:80px;
-    width:270px;
+    top:20px;
+    left:13spx;
+    width:260px;
 }
 .opinion__reviewer3{
     grid-row: 3 / span 5;
-    left:835px;
+    left:720px;
     position:relative;
-    bottom:190px;
-    height:180px;
-    width:270px;
+    bottom:290px;
+    height:200px;
+    width:260px;
     margin-right:10px;
 }
 .notes{
     text-align: center;
     color:white;
 }
-@media screen and (max-width:780px) {
+@media screen and (max-width:630px) {
     body{
         background-color: rgb(110, 94, 181);
     }
     .seller{
         display: flex;
         flex-direction: column;
+        width:250px;
+        align-items: center;
     }
     .opinion{
         display: flex;
         flex-direction: column;
+
+
+    }
+    .seller__abtseller--des{
+        display: flex;
+        flex-direction: column;
+        width:250px;
+    }
+    .seller__rating--rate1{
+        margin-left: 120px;
+    }
+    .seller__rating--rate2{
+        left:120px;
+    }
+    .seller__rating--rate3{
+        left:118px;
+    }
+    .opinion__reviewer1{
+        margin-bottom:10px;
+        left:-25px;
+    }
+    .opinion__reviewer2{
+        margin-bottom:150px;
+        margin-left:20px;
+        top:0px;
+    }
+    .opinion__reviewer3{
+        margin-top: 200px;
+        left:-25px;
     }
 
 } 
