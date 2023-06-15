@@ -1,0 +1,334 @@
+body{
+    background-image: url("bg-tablet-pattern.svg"),url("bg-tablet-pattern.svg");
+    background-repeat: no-repeat space,space no-repeat;
+    background-size:600px 600px;
+    background-position:left bottom, right top ;
+}
+.head{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.head img{
+    margin:20px;
+}
+.head_details{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+}
+.head_start button,.main_content button,.reviewslist button{
+    margin-top: 15px;
+    color:white;
+    background-color: orangered;
+    border:1px solid orangered;
+    border-radius: 15px;
+    width:100px;
+    height:25px;
+}
+.main{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.main_content h2{
+    font-size: 2.75rem;
+    margin-right:20px;
+    justify-content: flex-start;
+}
+.main_content p,button{
+    margin-left: 10px;
+}
+.main_content{
+    width:350px;
+}
+.main img{
+    width:480px;
+}
+.desc{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-left: 0%;
+}
+.desc_1{
+    width:350px;
+    margin-right:10%;
+}
+.desc_1 h3{
+    font-size:2rem;
+}
+.desc_2{
+    width:350px;
+}
+.desc_2 button{
+    background-color:orangered;
+    color:white;
+    border-radius: 15px;
+    width:30px;
+    border:1px solid orangered;
+    margin-right:20px;
+}
+.desc_2 p{
+    margin-left:60px;
+}
+h2{
+    font-size:2rem;
+    text-align:center;
+}
+.review{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom:15px;
+}
+.review img{
+    padding-top:20px;
+}
+.review1,.review2,.review3{
+    width:300px;
+    border-top: 100px;
+    border:1px solid rgb(245, 243, 243);
+    background-color: rgb(245, 243, 243);
+    text-align:center;
+}
+.rev{
+    text-align: center;
+}
+.caption{
+    margin-top:150px;
+    background-color:orangered;
+    color:white;
+    width:100%;
+    height:150px;
+}
+.caption{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.caption p{
+    width:350px;
+    font-size:2rem;
+}
+.caption button{
+    background-color: white;
+    border:1px solid orangered;
+    color:rgb(248, 78, 17);
+    height:40px;
+    width:100px;
+    margin-top:60px;
+    border-radius: 20px;
+}
+.details{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.foot {
+    background-color:black;
+    height:200px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    color:white;
+    padding-top:10px;
+}
+.foot_image{
+    margin-top:20px;
+}
+.foot_images{
+    margin-top:90px;
+    width:90px;
+}
+.inbox{
+    color:gray;
+    background-color:white;
+    border:1px solid white;
+    border-radius:15px;
+    height:30px;
+}
+.go{
+    background-color:orangered;
+    color:white;
+    border:1px solid orangered;
+    border-radius:15px;
+    height:30px;
+    width:40px;
+}
+.btn{
+    margin-top:20px;
+    height:30px;
+}
+.btn_foot p{
+    color:gray;
+    margin-top:80px;
+}
+@media screen and (max-width:670px){
+    .container{
+        display:flex;
+        flex-direction:column;
+        width:fit-content;
+    }
+}
+@media screen and (max-width:320px){
+    .container{
+        width:660px;
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+    }
+    .head{
+        content:url(logo.svg);
+        height:50px;
+        width:100px;
+        padding-left:50px;
+    }
+    .head{
+        content:url(icon-hamburger.svg);
+        height:20px;
+        width:20px;
+        padding-left:550px;
+    }
+    .head img,.head_details,.head_start{
+        display:none;
+    }
+    .main{
+        display:flex;
+        flex-direction:column-reverse;
+        padding-left: 70px;
+        justify-content: center;
+    }
+    .main_content{
+        width:500px;
+    }
+    .main_content h2{
+        font-size:4rem;
+    }
+    .main_content p{
+        font-size:2rem;
+        opacity:70%;
+    }
+    .main_content button{
+        align-items:center;
+        width:180px;
+        height:40px;
+    }
+    .desc{
+        display:flex;
+        flex-direction:column;
+    }
+    .desc_1{
+        padding-left:70px;
+    }
+    .desc_1 h3{
+        font-size: 3.20rem;
+        text-align:center;
+        width:400px;
+        padding-left:40px;
+    }
+    .desc_1 p{
+        text-align:center;
+        width:500px;
+        padding-left:10px;
+        font-size:1.90rem;
+        opacity:70%;
+    }
+    .desc_2{
+        width:660px;
+        margin-left: 0%;
+        font-size:1.90rem;
+    }
+    .desc_2 button{
+        width:50px;
+        height:30px;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+    .desc_2 h4{
+        background-color: rgb(252, 221, 210);
+        height:60px;
+        margin-left:0px;
+        padding-top: 10px;
+    }
+    .desc_2 p{
+        margin-left:0%;
+        padding-left: 10px;
+        opacity:70%;
+    }
+    .review1,.review3{
+        display:none;
+    }
+    .review2{
+        width:800px;
+        height:400px;
+        font-size:2rem;
+    }
+    .review2 p{
+        opacity:70%;
+    }
+    .rev button{
+        width:150px;
+        height:40px;
+    }
+    .caption{
+        width:490px;
+        display:flex;
+        flex-direction:column;
+        height:350px;
+        justify-content: center;
+        padding-left:170px;
+        padding-bottom:20px;
+    }
+    /* .btns{
+        padding-left:50px;
+    } */
+    .caption p{
+        font-size:3rem;
+    }
+    .caption button{
+        padding-top: 0px;
+    }
+    .btns{
+        height:30px;
+        justify-content: center;
+    }
+    .foot{
+        display:flex;
+        flex-direction: column-reverse;
+        height:380px;
+    }
+    .foot_content{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .foot_image{
+        padding-top:10px;
+    }
+    .foot_images{
+        height:30px;
+        padding-left:280px;
+        padding-top: 120px;
+    }
+    .btn{
+        height:40px;
+    }
+    .details{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+    .foot_content{
+        height:50px;
+        text-align:center;
+    }
+    .ending{
+        height:50px;
+        text-align: center;
+    }
+    .btn_foot{
+        padding-top:190px;
+    }
+
+}
