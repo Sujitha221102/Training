@@ -1,0 +1,97 @@
+var stuDetails=[];
+function addStu(name,email,phone,age,regno){
+    var student={
+        name:name,
+        email:email,
+        phone:phone,
+        age:age,
+        regno:regno
+    };
+    stuDetails.push(student);
+}
+addStu("Sujitha","sujitha@example.com","1234567890","22","CS23451");
+addStu("Sunitha","sunitha@example.com","1234567891","27","CS23452");
+addStu("Sadhana","sadhana@example.com","1234567892","23","CS23453");
+addStu("Aparna","aparna@example.com","1234567893","20","CS23454");
+addStu("Saranya","saranya@example.com","1234567894","22","CS23455");
+addStu("Abi rhooba","rooba@example.com","1234567895","23","CS23456");
+addStu("Akshaya","akshaya@example.com","1234567896","22","CS23457");
+console.log(stuDetails);
+-------------------------------------------------------------------------------
+
+STARTSWITH:
+
+var filteringStu=stuDetails.filter(function(student){
+    return student.name.startsWith("S");
+});
+console.log(filteringStu);
+-------------------------------------------------------------------------------
+
+UPDATE:
+
+var update=stuDetails.map(function(student){
+    if(student.phone==="1234567893"){
+        return student.regno="CS23458";
+    }
+});
+console.log(update);
+
+-------------------------------------------------------------------------------
+
+DELETE:
+
+stuDetails.map(function(student){
+    if(student.phone==="1234567894"){
+        delete student.age;
+    }
+});
+console.log(stuDetails);
+
+-------------------------------------------------------------------------------
+
+CHECK DETAILS OF A PARTICULAR STUDENT USING EMAIL:
+
+var findStudent=stuDetails.find(function(student){
+  return student.email==="sadhana@example.com";
+});
+console.log(findStudent);
+
+-------------------------------------------------------------------------------
+
+CHECKS EVERYONE HAS EMAIL:
+
+var findAllStudent=stuDetails.every(function(student){
+  return student.email!==undefined;
+});
+console.log(findAllStudent);
+
+-------------------------------------------------------------------------------
+
+TOTAL NO OD DATA:
+
+var totalNoOfData=stuDetails.reduce(function(accumulator){
+  return accumulator + 1;
+},0);
+ console.log(totalNoOfData);
+
+-------------------------------------------------------------------------------
+
+UPPERCASE:
+
+var uppercase=stuDetails.map(function(student){
+  return student.name.toUpperCase();
+});
+console.log(uppercase);
+
+-------------------------------------------------------------------------------
+
+AGE:
+
+var rangeOfAge=stuDetails.filter(function(student){
+  return student.age> 20 && student.age<25;
+});
+console.log(rangeOfAge);
+
+-------------------------------------------------------------------------------
+
+

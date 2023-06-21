@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS FORM</title>
+    <link rel="stylesheet" type="text/css" href="js form.css">
+</head>
+<body>
+    <main>
+        <h1>JS Form</h1>
+        <section>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" pattern="[A-Za-z]+" placeholder="enter your name" required>
+                <br /><br />
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <br /><br />
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required max="45" min="18" title="age must be greater than 17">
+                <br /><br />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br /><br />
+                <input type="submit" name="submit" value="submit" onclick="addTableRow();">
+            </form>
+        </section>
+        <section>
+            <table border="1px" id="table">
+                <thead>
+                    <tr>
+                        <th>Name of the student</th>
+                        <th>DOB</th>
+                        <th>AGE</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+          <button onclick="deleteRow();">Remove</button>
+        </section>
+    </main>
+    
+    <script>
+        let selectedRow = null
+        document.getElementById("form").addEventListener("submit", function(event){
+          event.preventDefault();
+          console.log("1")
+    
+          let name = document.getElementById("name").value
+          let dob = document.getElementById("dob").value
+          let age = document.getElementById("age").value
+          let email = document.getElementById("email").value
+          
+    
+          console.log(name, dob, age, email)
+          if(selectedRow == null){
+            insertData(name, dob, age, email)
+          }else{
+            updateData(name, dob, age, email)
+          }
+    
+          document.getElementById("form").reset();
+    
+        })
+    
+        function insertData(name, dob, age, email){
+          let table = document.getElementById("table")
+    
+          let row = table.insertRow(1)
+    
+          let cell1 = row.insertCell(0)
+          cell1.innerHTML = name
+          let cell2 = row.insertCell(1)
+          cell2.innerHTML = dob
+          let cell3 = row.insertCell(2)
+          cell3.innerHTML = age
+          let cell4 = row.insertCell(3)
+          cell4.innerHTML = email
+
+          let cell5 = row.insertCell(4)
+          cell5.innerHTML = '<input type="button" value="Edit" onclick="edit(this)">'+' '+'<input type="button" value="Delete" onclick="deleteData(this)">'
+        }
+    
+        function edit(btn){
+          let row = btn.parentNode.parentNode
+    
+          selectedRow = row
+    
+          console.log("row", btn)
+          console.log("row", btn.parentNode)
+          console.log("row", row)
+          
+          document.getElementById("name").value = row.cells[0].innerHTML
+          document.getElementById("dob").value = row.cells[1].innerHTML
+          document.getElementById("age").value = row.cells[2].innerHTML
+          document.getElementById("email").value = row.cells[3].innerHTML
+          console.log("name", name)
+    
+          let submitBtn = document.querySelector("input[type=submit]")
+          submitBtn.value = "Update"    
+        }
+    
+        function updateData(name, email,dob){
+          selectedRow.cells[0].innerHTML = name
+          selectedRow.cells[1].innerHTML = dob
+          selectedRow.cells[2].innerHTML = age
+          selectedRow.cells[3].innerHTML = email
+          
+    
+          let submitBtn = document.querySelector("input[type=submit]")
+          submitBtn.value = "Submit"
+    
+          selectedRow = null
+        }
+    
+        function deleteData(btn){
+          let row = btn.parentNode.parentNode;
+          let confirmation =confirm("Are you sure to delete the data");
+    
+          if(confirmation){
+            row.parentNode.removeChild(row)
+          }
+        }
+        function deleteRows() {
+        document.querySelectorAll('#table .select:checked').forEach(e => {
+        e.parentNode.parentNode.remove()
+  });
+}
+    
+      </script>
+</body>
+
+</html>

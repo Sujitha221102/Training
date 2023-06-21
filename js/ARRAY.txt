@@ -1,0 +1,37 @@
+AVERAGE OF AN ARRAY:
+
+var a=[1,2,3,4,5];
+var sum=0,i=0,avg;
+while(i<a.length){
+    sum+=a[i];
+    i++;
+}
+avg=sum/a.length;
+console.log(avg);
+
+------------------------------------------------------
+REVERSE AN ARRAY:
+
+var str="Sujitha";
+var reversed="";
+var n=str.length-1;
+for(i=n;i>=0;i--)
+{
+    reversed+=str[i];
+}
+console.log(reversed);
+
+------------------------------------------------------
+LARGEST OF AN ARRAY
+
+var a = [8,9,2,3,4,5];
+var large =a[0],i = 0;
+while(i < a.length) 
+{
+    i++;
+    if (large < a[i] ) 
+    {
+        large = a[i];
+    }
+}
+console.log(large); 

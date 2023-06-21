@@ -1,0 +1,70 @@
+callback:
+
+function greet(name, myFunction) {
+    console.log('Hello world');
+    myFunction(name);
+}
+function sayName(name) {
+    console.log('Hi' + ' ' + name);
+}
+setTimeout(greet, 2000, 'Suji', sayName);
+
+output:
+Hello world
+Hello Suji
+
+-----------------------------------------------------------------------------------
+promises:
+
+<p id="para"></p>
+
+<script>
+function myAnswer(some) {
+  document.getElementById("para").innerHTML = some;
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+  if (x == 0) 
+    myResolve("Correct");
+  } 
+  else{
+    myReject("Error");
+  }
+});
+
+myPromise.then(
+  function(value){
+	myAnswer(value);
+  }
+  function(error){
+	myAnswer(error);
+});
+
+output:
+
+Correct
+
+-------------------------------------------------------------------------------
+Async/Await:
+
+function resolveAfter3Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 3000);
+  });
+}
+
+async function asyncCall() {
+  console.log('calling');
+  const result = await resolveAfter3Seconds();
+  console.log(result);
+  // Expected output: "resolved"
+}
+asyncCall();
+
+output:
+
+calling 
+resolved

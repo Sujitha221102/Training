@@ -1,0 +1,31 @@
+BINARY TO DECIMAL:
+
+var binary="1001";
+var decimal=parseInt(binary,2);
+console.log(decimal);
+
+---------------------------------------------
+var binary="10110";
+var decimal;
+function digit(decimal){
+    decimal=parseInt(binary,2);
+    return decimal;
+}
+console.log(digit(decimal));
+
+*******************************************************************
+
+DECIMAL TO BINARY:
+
+var decimal="20";
+var binary=(+decimal).toString(2);
+console.log(binary);
+
+---------------------------------------------
+var decimal="20";
+let binary;
+function digit(binary){
+    binary=(+decimal).toString(2);
+    return binary;
+}
+console.log(digit(binary));
