@@ -1,0 +1,29 @@
+h2{
+    text-align:center;
+}
+#form{
+    border:1px solid black;
+    width:180px;
+    height:200px;
+    background-color:blueviolet;
+    display:flex;
+    flex-direction:column;
+    margin-left:42%;
+    padding:10px;
+    padding-left: 2%;
+    border:2px solid rebeccapurple;
+}
+#expenseName,#expenseAmt{
+    width:150px;
+    padding:3%;
+    border:2px solid blueviolet;
+}
+#form button{
+    width:100px;
+    color:rgb(20, 1, 1);
+    
+}
+#form button:hover{
+    background-color:black;
+    color:white;
+}
