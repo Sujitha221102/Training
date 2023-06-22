@@ -174,7 +174,8 @@ h2{
 }
 @media screen and (max-width:320px){
     .container{
-        width:660px;
+        padding-right:10px;
+        width:650px;
         height:100vh;
         display:flex;
         flex-direction: column;
@@ -251,6 +252,7 @@ h2{
         height:60px;
         margin-left:0px;
         padding-top: 10px;
+        width:650px;
     }
     .desc_2 p{
         margin-left:0%;
@@ -273,7 +275,7 @@ h2{
         height:40px;
     }
     .caption{
-        width:490px;
+        width:480px;
         display:flex;
         flex-direction:column;
         height:350px;
