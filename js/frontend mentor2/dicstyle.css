@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#ae9cff;
+}
+.logo{
+    margin-top: 100px;
+    text-align: center;
+    display:flex;
+    justify-content: space-evenly;
+}
+#searchInput{
+    margin:10px;
+    margin-left: 350px;
+    border:1px solid rgb(235, 223, 235);
+    background-color: rgb(224, 216, 232);
+    border-radius: 5px;
+    padding:10px;
+    width:500px;
+    align-items: center;
+}

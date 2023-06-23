@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <div class="card">
+        <section class="container1">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+                <li >Product discovery and buliding what matters</li>
+                <li >Measuring to ensure updates are a success</li>
+                <li >And much more!</li>
+            </ul>
+            <form name="form1">
+                <div>
+                <label for="email" id="emailid">Email address</label><br/>
+                <label id="mistake">valid email required</label><br/>
+                <br/></div>
+                <input type="text" id="email" name="email" placeholder="email@company.com" onchange="checkemail(document.form1.email)" title="Please enter valid email address" required/><br/>
+                <br/>
+                <button type="submit">Subcribe to Monthly Newsletter</button>
+            </form>
+        </section>
+        <section class="container2">
+            <img src="illustration-sign-up-desktop.svg" width="40 0px" height="300px">
+        </section>
+    </div>
+    <div class="card-2 hide">
+        <img src="icon-success.svg" class="icon-card">
+        <h1>Thanks for subscribing!</h1> 
+        <p>A confirmation email has been sent to ash@loremcompany.com.
+            Please open it and click the button inside to confirm your subscription.
+        </p>
+         <button>Dismiss message</button>
+    </div>
+    <script src="./news.js"></script>
+</body>
+</html>

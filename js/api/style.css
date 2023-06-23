@@ -1,0 +1,87 @@
+        body{
+            background-color: aliceblue;
+        }
+        .popupbg {
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(163, 221, 170, 0.483);
+            z-index: 999;
+        }
+        h1{
+            text-align: center;
+        }
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            background-color: rgb(103, 177, 230);
+            font-size: 20px;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        #submitData{
+            text-align: center;
+            padding:10px;
+            background-color: rgb(132, 93, 169);
+        }
+        #closeIcon {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        #main {
+            display: flex;
+            justify-content: space-between;
+        }
+        #search{
+            background-color: rgb(124, 124, 232);
+            color:white;
+            padding:10px;
+        }
+        #content {
+            overflow-y: scroll;
+            margin: 0px 50px;
+            height: 200px;
+        }
+
+        #imgg {
+            width: 250px;
+            height: 200px;
+        }
+
+        #display {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* border: 2px solid black; */
+        }
+
+
+        @media screen and (max-width:700px) {
+            #display {
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                /* border: 2px solid black; */
+            }
+
+        }
+        @media screen and (max-width:400px) {
+            #display {
+
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                /* border: 2px solid black; */
+            }
+
+        }
+    
